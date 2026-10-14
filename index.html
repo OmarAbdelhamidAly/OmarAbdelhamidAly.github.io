@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omar Abdelhamid | AI Systems Engineer &amp; Researcher</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Portfolio of Omar Abdelhamid Aly — AI &amp; Systems Engineer specializing in Agentic AI (LangGraph), LLM Post-Training &amp; Alignment (Inv-GRPO, DPO), Advanced RAG, and Distributed MLOps. 4x AWS Certified, Published Researcher (Elsevier ESWA'26), ICPC Finalist.">
+  <meta name="keywords" content="Omar Abdelhamid, AI Engineer, LLM Engineer, Agentic AI, LangGraph, Post-Training, GRPO, DPO, RAG, GraphRAG, vLLM, MLOps, AWS Certified, Orange Innovation Labs">
+  <meta name="author" content="Omar Abdelhamid Aly">
+  
+  <meta property="og:title" content="Omar Abdelhamid | AI Systems Engineer &amp; Researcher">
+  <meta property="og:description" content="Bridging applied SLM reasoning research with production-grade distributed infrastructure. 20+ shipped systems, 4x AWS Certified, published in Elsevier.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/OmarAbdelhamidAly">
+  
+  <!-- Google Fonts: Outfit (Display) + Inter (Body) + Fira Code (Technical/Metrics) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Interactive Neural Canvas -->
+  <canvas id="neuralCanvas"></canvas>
+
+  <!-- Ambient Glow Blobs -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="glass-nav" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-bracket">&lt;</span>
+        <span class="brand-text">OA</span>
+        <span class="brand-dot">.</span>
+        <span class="brand-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#research" class="nav-link"><span class="nav-num">01.</span> Research</a>
+        <a href="#systems" class="nav-link"><span class="nav-num">02.</span> Systems</a>
+        <a href="#lab" class="nav-link"><span class="nav-num">03.</span> Interactive Lab</a>
+        <a href="#stack" class="nav-link"><span class="nav-num">04.</span> Tech Stack</a>
+        <a href="#credentials" class="nav-link"><span class="nav-num">05.</span> Credentials</a>
+        <a href="#contact" class="nav-link"><span class="nav-num">06.</span> Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-terminal" id="toggleTerminalBtn" title="Launch Interactive Terminal">
+          <span class="terminal-prompt">&gt;_</span> CLI
+        </button>
+        <a href="#contact" class="btn-primary-sm">Get in Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <!-- Live Status Pill -->
+        <div class="status-pill glass-pill animate-fade-in">
+          <span class="status-indicator"></span>
+          <span class="status-text">Available for High-Impact Roles &amp; Contracts &bull; Egypt, UAE, KSA &amp; Global Remote</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="hero-title animate-fade-in-up">
+          Omar Abdelhamid<span class="accent-dot">.</span>
+        </h1>
+        
+        <div class="hero-tagline-wrapper animate-fade-in-up delay-1">
+          <span class="tagline-prefix">AI &amp; Systems Engineer &bull; </span>
+          <span class="gradient-text hero-dynamic-text">Bridging Frontier Reasoning with Production MLOps</span>
+        </div>
+
+        <p class="hero-description animate-fade-in-up delay-2">
+          Applied AI researcher at <strong>Orange Innovation Labs</strong> and M.Sc. candidate in Artificial Intelligence at Benha University. Specializing in <strong>Stateful Agentic Workflows (LangGraph)</strong>, <strong>Post-Training Alignment (Inv-GRPO, DPO, SimPO)</strong>, <strong>Enterprise Hybrid RAG (Dense + GraphRAG)</strong>, and <strong>High-Throughput Serving (vLLM, Triton)</strong> across Kubernetes and AWS.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-cta-group animate-fade-in-up delay-3">
+          <a href="#systems" class="btn-primary">
+            <span>Explore Systems &amp; Codebases</span>
+            <svg class="icon-arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#research" class="btn-secondary">
+            <span>Published Research &amp; Papers</span>
+          </a>
+          <button class="btn-ghost" id="heroCopyEmailBtn" data-email="omarabdelhamid347@gmail.com">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy Email</span>
+          </button>
+        </div>
+
+        <!-- Quick Verified Metrics Counters -->
+        <div class="metrics-grid animate-fade-in-up delay-4">
+          <div class="metric-card glass-card">
+            <div class="metric-number">20<span class="accent-plus">+</span></div>
+            <div class="metric-label">Production AI Systems Shipped</div>
+            <div class="metric-subtext">Agentic, Serving, RAG &amp; Vision</div>
+          </div>
+
+          <div class="metric-card glass-card">
+            <div class="metric-number">4<span class="accent-plus">&times;</span></div>
+            <div class="metric-label">AWS Certified + Azure AI</div>
+            <div class="metric-subtext">Solutions Architect &amp; ML Engineer</div>
+          </div>
+
+          <div class="metric-card glass-card">
+            <div class="metric-number">1<span class="accent-badge">ESWA</span></div>
+            <div class="metric-label">Published Research Paper</div>
+            <div class="metric-subtext">Elsevier 2026 &bull; +7.9% Hits@1</div>
+          </div>
+
+          <div class="metric-card glass-card">
+            <div class="metric-number">4<span class="accent-plus">th</span></div>
+            <div class="metric-label">ICPC / ECPC Finalist</div>
+            <div class="metric-subtext">Competitive Programming Rigor</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 01: RESEARCH & PAPERS ==================== -->
+    <section class="section" id="research">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge">01 // FRONTIER RESEARCH</span>
+          <h2 class="section-title">Applied AI Research &amp; Publications</h2>
+          <p class="section-subtitle">
+            Isolating algorithmic reasoning from shortcut mimicry and advancing dense graph retrieval under incomplete knowledge bases.
+          </p>
+        </div>
+
+        <div class="research-grid">
+          
+          <!-- Research Card 1: Orange Innovation Labs -->
+          <div class="research-card glass-card featured-glow">
+            <div class="research-header">
+              <div class="research-badges">
+                <span class="badge badge-purple">Ongoing Applied R&amp;D</span>
+                <span class="badge badge-cyan">Orange Innovation Egypt</span>
+              </div>
+              <span class="research-date">2026 &mdash; Present</span>
+            </div>
+
+            <h3 class="research-title">
+              Reduction Ladder: Diagnosing &amp; Resolving Code SLM Shortcut Mimicry
+            </h3>
+            
+            <p class="research-desc">
+              Conducted under Dr. Ghada Soliman at Orange Innovation Labs. Formulated a 6-tier empirical diagnostic evaluating collapse bounds across 664 coding tasks under semantics-preserving AST mutations. Derived <strong>Invariance-Regularized Policy Optimization (Inv-GRPO)</strong> pairing cross-perturbation rollouts with semantic consistency rewards to break shortcut mimicry with 0ms inference overhead.
+            </p>
+
+            <div class="research-highlights">
+              <div class="highlight-item">
+                <span class="hl-dot"></span>
+                <span><strong>Novel Mitigation (Inv-GRPO):</strong> Invariance-regularized policy optimization enforcing cross-mutation semantic consistency.</span>
+              </div>
+              <div class="highlight-item">
+                <span class="hl-dot"></span>
+                <span><strong>Edge VRAM Constraint:</strong> Benchmarking Qwen2.5-Coder (1.5B/7B) under strict &le;8GB GPU VRAM budgets.</span>
+              </div>
+              <div class="highlight-item">
+                <span class="hl-dot"></span>
+                <span><strong>Shift Collapse:</strong> Demonstrating algorithmic reasoning robustness across HumanEval and EvoEval suites.</span>
+              </div>
+            </div>
+
+            <div class="research-footer">
+              <div class="research-tags">
+                <span class="tag">RLVR / GRPO</span>
+                <span class="tag">SLM Reasoning</span>
+                <span class="tag">AST Mutation</span>
+                <span class="tag">PyTorch</span>
+              </div>
+              <a href="https://github.com/OmarAbdelhamidAly/diagnosing-resolving-code-slm-mimicry" target="_blank" rel="noopener" class="btn-link">
+                <span>View Codebase &amp; Benchmarks</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Research Card 2: Elsevier Paper -->
+          <div class="research-card glass-card">
+            <div class="research-header">
+              <div class="research-badges">
+                <span class="badge badge-emerald">Published Journal Paper</span>
+                <span class="badge badge-blue">Elsevier &bull; ESWA 2026</span>
+              </div>
+              <span class="research-date">Vol. 296, 2026</span>
+            </div>
+
+            <h3 class="research-title">
+              NT-sMoCo: Dense Retrieval &amp; Contrastive Learning for Incomplete Knowledge-Based QA
+            </h3>
+            
+            <p class="research-desc">
+              Published in <em>Expert Systems with Applications</em> (Elsevier). Formulated a Normalized-Temperature Scaled Momentum Contrastive framework with a Dual-BERT dense retrieval backbone and a 2-layer Graph Attention Network (GATv2) to address critical entity sparsity in incomplete Knowledge Bases (simulated 30%&ndash;100% Freebase coverage).
+            </p>
+
+            <div class="research-highlights">
+              <div class="highlight-item">
+                <span class="hl-dot"></span>
+                <span><strong>State-of-the-Art Accuracy:</strong> Achieved +7.9% Hits@1 and +8% F1 over prior baselines on WebQSP.</span>
+              </div>
+              <div class="highlight-item">
+                <span class="hl-dot"></span>
+                <span><strong>Statistical Significance:</strong> Validated with rigorous hypothesis testing (<em>p</em> &lt; 0.0001).</span>
+              </div>
+              <div class="highlight-item">
+                <span class="hl-dot"></span>
+                <span><strong>Multi-Hop Subgraph Traversal:</strong> GATv2 routing over complex multi-relational entity neighborhoods.</span>
+              </div>
+            </div>
+
+            <div class="research-footer">
+              <div class="research-tags">
+                <span class="tag">Dense Retrieval</span>
+                <span class="tag">GATv2</span>
+                <span class="tag">Contrastive Learning</span>
+                <span class="tag">Freebase KBQA</span>
+              </div>
+              <div class="button-row">
+                <a href="https://doi.org/10.1016/j.eswa.2025.129025" target="_blank" rel="noopener" class="btn-link">
+                  <span>DOI: 10.1016/j.eswa.2025.129025</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+                <a href="https://github.com/OmarAbdelhamidAly/nt-smoco-kbqa" target="_blank" rel="noopener" class="btn-link-secondary">
+                  <span>GitHub Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 02: SYSTEMS SHOWCASE ==================== -->
+    <section class="section" id="systems">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge">02 // ARCHITECTURE PORTFOLIO</span>
+          <h2 class="section-title">Flagship AI Systems &amp; Codebases</h2>
+          <p class="section-subtitle">
+            Autonomous multi-agent platforms, high-throughput model serving engines, and enterprise RAG pipelines with verifiable source code.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-container">
+          <div class="filter-tabs glass-pill" id="filterTabs">
+            <button class="filter-tab active" data-filter="all">All Systems <span class="tab-count">20+</span></button>
+            <button class="filter-tab" data-filter="agentic">Agentic AI &amp; LangGraph</button>
+            <button class="filter-tab" data-filter="serving">Serving &amp; Alignment</button>
+            <button class="filter-tab" data-filter="rag">Enterprise RAG</button>
+            <button class="filter-tab" data-filter="vision">Computer Vision</button>
+            <button class="filter-tab" data-filter="mlops">MLOps &amp; Cloud</button>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+
+          <!-- Project 1: OpenQ -->
+          <div class="project-card glass-card" data-category="agentic rag mlops">
+            <div class="project-card-header">
+              <div class="card-domain">Enterprise Multi-Agent</div>
+              <div class="card-metric">Fault-Isolated &bull; EKS</div>
+            </div>
+            <h3 class="project-title">OpenQ &mdash; Federated Agentic Intelligence Platform</h3>
+            <p class="project-desc">
+              Autonomous AI platform unifying heterogeneous data modalities behind natural language queries. Architected a hybrid retrieval backend (Neo4j GraphRAG + Qdrant) orchestrated across 8 fault-isolated Celery workers with self-correcting 3-retry SQL generation and persistent Human-in-the-Loop checkpoints (AsyncRedisSaver).
+            </p>
+            <div class="project-tags">
+              <span class="tag">LangGraph</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Neo4j</span>
+              <span class="tag">Qdrant</span>
+              <span class="tag">Celery</span>
+              <span class="tag">AWS EKS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/OmarAbdelhamidAly/OpenQ-Federated-Agentic-Intelligence-Platform" target="_blank" rel="noopener" class="project-btn">
+                <span>View Repository</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2: Arabic LLM Serving -->
+          <div class="project-card glass-card" data-category="serving mlops">
+            <div class="project-card-header">
+              <div class="card-domain">Post-Training &amp; Serving</div>
+              <div class="card-metric">Triton + vLLM &bull; K8s</div>
+            </div>
+            <h3 class="project-title">Arabic Mental Health LLM &mdash; Serving &amp; Alignment Engine</h3>
+            <p class="project-desc">
+              Automated Kubeflow (KFP v2) pipeline fine-tuning Qwen2.5-3B via Unsloth (NF4 4-bit). Benchmarked 6 parallel alignment algorithms (DPO, IPO, KTO, ORPO, SimPO, RLOO), auto-merging winning SimPO weights. Configured high-throughput serving with NVIDIA Triton + vLLM continuous batching and PagedAttention for sub-second responses.
+            </p>
+            <div class="project-tags">
+              <span class="tag">vLLM</span>
+              <span class="tag">NVIDIA Triton</span>
+              <span class="tag">SimPO / DPO</span>
+              <span class="tag">Kubeflow</span>
+              <span class="tag">MLflow</span>
+              <span class="tag">Kubernetes</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/OmarAbdelhamidAly/arabic-peft-align-rag-tts" target="_blank" rel="noopener" class="project-btn">
+                <span>View Repository</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3: Multilingual RAG -->
+          <div class="project-card glass-card" data-category="rag agentic">
+            <div class="project-card-header">
+              <div class="card-domain">Hybrid RAG &amp; Reflection</div>
+              <div class="card-metric">Zero Hallucination Loop</div>
+            </div>
+            <h3 class="project-title">Multilingual RAG Architecture with Multi-Agent Reflection</h3>
+            <p class="project-desc">
+              Designed a 5-agent LangGraph topology (Query Rewriter, ReAct Brain, Reflection Node) utilizing LLaMA-3.3-70B to iteratively detect and eliminate hallucinations. Optimized retrieval latency using a 5-stage FAISS HNSW pipeline combining BM25 sparse search, cross-encoder reranking, and Redis semantic caching.
+            </p>
+            <div class="project-tags">
+              <span class="tag">LangGraph</span>
+              <span class="tag">FAISS HNSW</span>
+              <span class="tag">Cross-Encoder</span>
+              <span class="tag">BM25</span>
+              <span class="tag">Redis Cache</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/OmarAbdelhamidAly/multilingual-rag-system" target="_blank" rel="noopener" class="project-btn">
+                <span>View Repository</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 4: Insightify BI Agent -->
+          <div class="project-card glass-card" data-category="agentic">
+            <div class="project-card-header">
+              <div class="card-domain">Autonomous BI</div>
+              <div class="card-metric">ReAct SQL Planning</div>
+            </div>
+            <h3 class="project-title">Insightify &mdash; Agentic Business Intelligence Platform</h3>
+            <p class="project-desc">
+              Autonomous BI system where agents decompose natural language queries into multi-step SQL plans, execute across relational databases, evaluate query correctness, and surface actionable insights with automated chart synthesis without human prompting.
+            </p>
+            <div class="project-tags">
+              <span class="tag">LangChain</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">SQLAlchemy</span>
+              <span class="tag">ReAct</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/OmarAbdelhamidAly/insightify-agentic-bi-platform" target="_blank" rel="noopener" class="project-btn">
+                <span>View Repository</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 5: LoRA E-Commerce Search -->
+          <div class="project-card glass-card" data-category="serving rag">
+            <div class="project-card-header">
+              <div class="card-domain">Semantic Search &amp; LoRA</div>
+              <div class="card-metric">1M+ SKUs &bull; Sub-second</div>
+            </div>
+            <h3 class="project-title">LoRA-Finetuned E-Commerce Semantic Search Pipeline</h3>
+            <p class="project-desc">
+              Domain-adapted bi-encoder embeddings via LoRA (~90% parameter reduction) with FAISS vector indexing over 1M+ SKUs. Integrated with a stateful LangGraph conversational workflow orchestrating FLAN-T5 for personalized multi-turn recommendation sessions.
+            </p>
+            <div class="project-tags">
+              <span class="tag">LoRA / PEFT</span>
+              <span class="tag">LangGraph</span>
+              <span class="tag">FAISS</span>
+              <span class="tag">FLAN-T5</span>
+              <span class="tag">PyTorch</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/OmarAbdelhamidAly/lora-finetuned-langgraph-ecommerce-search" target="_blank" rel="noopener" class="project-btn">
+                <span>View Repository</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 6: Sports Analytics Vision -->
+          <div class="project-card glass-card" data-category="vision">
+            <div class="project-card-header">
+              <div class="card-domain">Computer Vision</div>
+              <div class="card-metric">30 FPS Live Tracking</div>
+            </div>
+            <h3 class="project-title">Sports Analytics &mdash; YOLOv8 + ByteTrack Tracking Pipeline</h3>
+            <p class="project-desc">
+              Real-time multi-object player and ball tracking pipeline with homography perspective correction, velocity estimation, and spatiotemporal heatmap generation deployed on edge video streams at a stable 30 FPS inference speed.
+            </p>
+            <div class="project-tags">
+              <span class="tag">YOLOv8</span>
+              <span class="tag">ByteTrack</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">Homography</span>
+              <span class="tag">Python</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/OmarAbdelhamidAly/yolo-bytetrack-perspective-sports-analytics" target="_blank" rel="noopener" class="project-btn">
+                <span>View Repository</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 7: Traffic DeepSORT -->
+          <div class="project-card glass-card" data-category="vision">
+            <div class="project-card-header">
+              <div class="card-domain">Edge Vision</div>
+              <div class="card-metric">Identity-Preserving MOT</div>
+            </div>
+            <h3 class="project-title">Traffic Analysis Pipeline &mdash; YOLOv8 + DeepSORT</h3>
+            <p class="project-desc">
+              Vehicle detection and identity-preserving multi-object tracking across multi-lane traffic camera feeds. Implemented automated optical speed estimation, lane violation detection, and high-concurrency stream ingestion.
+            </p>
+            <div class="project-tags">
+              <span class="tag">YOLOv8</span>
+              <span class="tag">DeepSORT</span>
+              <span class="tag">Edge Inference</span>
+              <span class="tag">OpenCV</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/OmarAbdelhamidAly/yolov8-deepsort-traffic-analysis-pipeline" target="_blank" rel="noopener" class="project-btn">
+                <span>View Repository</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 8: GAN & VAE Vault -->
+          <div class="project-card glass-card" data-category="serving vision">
+            <div class="project-card-header">
+              <div class="card-domain">Generative Modeling</div>
+              <div class="card-metric">40% FID Improvement</div>
+            </div>
+            <h3 class="project-title">Deep Generative Architectures &mdash; GANs &amp; VAE Vault</h3>
+            <p class="project-desc">
+              Comprehensive implementation vault covering DCGAN, WGAN, WGAN-GP, conditional GANs, and &beta;-VAE with full training pipelines, Wasserstein loss analysis, latent space interpolations, and data augmentation for scarce datasets.
+            </p>
+            <div class="project-tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">WGAN-GP</span>
+              <span class="tag">&beta;-VAE</span>
+              <span class="tag">TensorBoard</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/OmarAbdelhamidAly/gan-vae-generative-architectures" target="_blank" rel="noopener" class="project-btn">
+                <span>View Repository</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 9: Dockerized MLOps -->
+          <div class="project-card glass-card" data-category="mlops">
+            <div class="project-card-header">
+              <div class="card-domain">MLOps &amp; CI/CD</div>
+              <div class="card-metric">Zero-Downtime Rollouts</div>
+            </div>
+            <h3 class="project-title">Dockerized MLOps Pipeline &mdash; Automated CI/CD</h3>
+            <p class="project-desc">
+              Containerized ML inference serving pipeline featuring Docker multi-stage builds, automated GitHub Actions CI/CD, model versioning registries, and Prometheus latency monitoring with automated rollbacks.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Docker</span>
+              <span class="tag">GitHub Actions</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Prometheus</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/OmarAbdelhamidAly/dockerized-mlops-malware-inference" target="_blank" rel="noopener" class="project-btn">
+                <span>View Repository</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 10: AWS SAA Labs -->
+          <div class="project-card glass-card" data-category="mlops">
+            <div class="project-card-header">
+              <div class="card-domain">Cloud Infrastructure</div>
+              <div class="card-metric">Terraform &bull; IaC</div>
+            </div>
+            <h3 class="project-title">AWS Solutions Architect &mdash; Infrastructure as Code Labs</h3>
+            <p class="project-desc">
+              Production-ready Terraform/HCL infrastructure modules for AWS multi-AZ VPCs, EKS clusters, SageMaker model endpoints, Aurora Serverless, IAM least-privilege security policies, and S3 event routing.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Terraform</span>
+              <span class="tag">AWS EKS</span>
+              <span class="tag">SageMaker</span>
+              <span class="tag">VPC Peering</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/OmarAbdelhamidAly/AWS-SAA" target="_blank" rel="noopener" class="project-btn">
+                <span>View Repository</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 11: Clinical Diagnostic Suite -->
+          <div class="project-card glass-card" data-category="vision serving">
+            <div class="project-card-header">
+              <div class="card-domain">Healthcare AI</div>
+              <div class="card-metric">92% Multimodal Acc</div>
+            </div>
+            <h3 class="project-title">Multimodal Clinical Diagnostic Suite &mdash; ViT + DenseNet</h3>
+            <p class="project-desc">
+              Full-stack medical imaging diagnostic system combining Vision Transformers (ViT) and DenseNet201 for multi-class pathology classification, exposed via a production Flask/FastAPI REST service with Grad-CAM visual interpretability maps.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Vision Transformer</span>
+              <span class="tag">DenseNet201</span>
+              <span class="tag">Grad-CAM</span>
+              <span class="tag">Healthcare AI</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/OmarAbdelhamidAly/biometric-multimodel-clinical-diagnostic-suite" target="_blank" rel="noopener" class="project-btn">
+                <span>View Repository</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 12: Cognitive Multiagent Orchestrator -->
+          <div class="project-card glass-card" data-category="agentic">
+            <div class="project-card-header">
+              <div class="card-domain">Cognitive Orchestration</div>
+              <div class="card-metric">Shared Memory Layer</div>
+            </div>
+            <h3 class="project-title">Cognitive Multi-Agent Orchestrator Layer</h3>
+            <p class="project-desc">
+              LangGraph-based cognitive orchestration layer coordinating specialized domain agents with shared episodic memory, consensus resolution mechanisms, and dynamic delegation graphs running over Groq and Mixtral-8x7B.
+            </p>
+            <div class="project-tags">
+              <span class="tag">LangGraph</span>
+              <span class="tag">Mixtral-8x7B</span>
+              <span class="tag">Groq API</span>
+              <span class="tag">Memory Routing</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/OmarAbdelhamidAly/langgraph-cognitive-multiagent-orchestrator" target="_blank" rel="noopener" class="project-btn">
+                <span>View Repository</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 03: INTERACTIVE LAB ==================== -->
+    <section class="section" id="lab">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge">03 // SYSTEM SIMULATION</span>
+          <h2 class="section-title">Interactive Agentic RAG Lab</h2>
+          <p class="section-subtitle">
+            Step through a live demonstration of a stateful LangGraph pipeline with query anaphora resolution, hybrid retrieval, reflection, and Prometheus evaluation telemetry.
+          </p>
+        </div>
+
+        <div class="lab-container glass-card">
+          
+          <!-- Lab Control Toolbar -->
+          <div class="lab-toolbar">
+            <div class="lab-query-input-wrap">
+              <span class="input-prefix">Query:</span>
+              <input type="text" id="labQueryInput" class="lab-input" value="Compare its zero-shot transfer collapse on AST mutations vs standard GRPO" readonly>
+            </div>
+            <div class="lab-actions">
+              <button class="btn-step" id="prevStepBtn" disabled>&larr; Back</button>
+              <button class="btn-step btn-step-primary" id="nextStepBtn">Next Stage &rarr;</button>
+              <button class="btn-step" id="resetLabBtn">&#x21bb; Reset</button>
+            </div>
+          </div>
+
+          <!-- Pipeline Visualizer Canvas / Graph -->
+          <div class="pipeline-graph" id="pipelineGraph">
+            
+            <div class="graph-node" id="node-1" data-step="1">
+              <div class="node-icon">01</div>
+              <div class="node-content">
+                <div class="node-title">Sliding Window &bull; Refiner</div>
+                <div class="node-desc">Anaphora resolution (resolves &ldquo;its&rdquo; &rarr; &ldquo;Inv-GRPO model&rdquo;)</div>
+              </div>
+              <div class="node-status">Ready</div>
+            </div>
+
+            <div class="graph-connector" id="conn-1"></div>
+
+            <div class="graph-node" id="node-2" data-step="2">
+              <div class="node-icon">02</div>
+              <div class="node-content">
+                <div class="node-title">Hybrid Retrieval Backbone</div>
+                <div class="node-desc">Qdrant Dense (FAISS) + Neo4j GraphRAG multi-hop</div>
+              </div>
+              <div class="node-status">Idle</div>
+            </div>
+
+            <div class="graph-connector" id="conn-2"></div>
+
+            <div class="graph-node" id="node-3" data-step="3">
+              <div class="node-icon">03</div>
+              <div class="node-content">
+                <div class="node-title">Multi-Agent Reflection Node</div>
+                <div class="node-desc">Hallucination check &amp; self-correcting attribution loop</div>
+              </div>
+              <div class="node-status">Idle</div>
+            </div>
+
+            <div class="graph-connector" id="conn-3"></div>
+
+            <div class="graph-node" id="node-4" data-step="4">
+              <div class="node-icon">04</div>
+              <div class="node-content">
+                <div class="node-title">Galileo Quality &bull; Telemetry</div>
+                <div class="node-desc">Prometheus metrics export: Context Relevance &amp; Utilization</div>
+              </div>
+              <div class="node-status">Idle</div>
+            </div>
+
+          </div>
+
+          <!-- Live Telemetry Stream Console -->
+          <div class="lab-console">
+            <div class="console-header">
+              <div class="console-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="console-title">Live Pipeline Telemetry &bull; OpenTelemetry Span</div>
+              <div class="console-latency" id="consoleLatency">p95 Latency: &mdash;</div>
+            </div>
+            <pre class="console-body" id="consoleLogs"><code>[INIT] Agentic RAG state graph compiled successfully.
+[INFO] Waiting for user execution... Click "Next Stage" to trigger pipeline execution.</code></pre>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 04: TECH STACK MATRIX ==================== -->
+    <section class="section" id="stack">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge">04 // TECHNICAL TAXONOMY</span>
+          <h2 class="section-title">Production Tech Stack &amp; Skills</h2>
+          <p class="section-subtitle">
+            An enterprise-grade technology stack categorized by architectural responsibility, not random buzzwords.
+          </p>
+        </div>
+
+        <div class="stack-matrix">
+
+          <!-- Tier 1 -->
+          <div class="stack-tier glass-card">
+            <div class="tier-header">
+              <div class="tier-icon">🧠</div>
+              <div>
+                <h3 class="tier-title">Foundation Models &amp; Post-Training</h3>
+                <div class="tier-subtitle">Alignment, Fine-Tuning &amp; Quantization</div>
+              </div>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip">RLVR</span>
+              <span class="skill-chip">GRPO / Inv-GRPO</span>
+              <span class="skill-chip">DPO &bull; SimPO</span>
+              <span class="skill-chip">SFT &bull; KTO</span>
+              <span class="skill-chip">LoRA / QLoRA</span>
+              <span class="skill-chip">PEFT</span>
+              <span class="skill-chip">Unsloth</span>
+              <span class="skill-chip">TRL</span>
+              <span class="skill-chip">BitsAndBytes NF4</span>
+              <span class="skill-chip">AWQ / GPTQ</span>
+              <span class="skill-chip">Chain-of-Thought (CoT)</span>
+            </div>
+          </div>
+
+          <!-- Tier 2 -->
+          <div class="stack-tier glass-card">
+            <div class="tier-header">
+              <div class="tier-icon">🤖</div>
+              <div>
+                <h3 class="tier-title">Agentic AI &amp; Orchestration</h3>
+                <div class="tier-subtitle">State Machines &amp; Autonomous Workflows</div>
+              </div>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip">LangGraph</span>
+              <span class="skill-chip">LangChain</span>
+              <span class="skill-chip">ReAct Loops</span>
+              <span class="skill-chip">Reflection Nodes</span>
+              <span class="skill-chip">AsyncRedisSaver (HITL)</span>
+              <span class="skill-chip">Tool Calling</span>
+              <span class="skill-chip">Self-Healing SQL</span>
+              <span class="skill-chip">Semantic Caching</span>
+              <span class="skill-chip">Pydantic Schema</span>
+            </div>
+          </div>
+
+          <!-- Tier 3 -->
+          <div class="stack-tier glass-card">
+            <div class="tier-header">
+              <div class="tier-icon">⚡</div>
+              <div>
+                <h3 class="tier-title">Inference, Serving &amp; GPUs</h3>
+                <div class="tier-subtitle">High-Concurrency Low-Latency Serving</div>
+              </div>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip">vLLM</span>
+              <span class="skill-chip">NVIDIA Triton</span>
+              <span class="skill-chip">PagedAttention</span>
+              <span class="skill-chip">Continuous Batching</span>
+              <span class="skill-chip">FlashAttention</span>
+              <span class="skill-chip">FastAPI (Asyncio)</span>
+              <span class="skill-chip">gRPC Proxies</span>
+              <span class="skill-chip">ONNX Runtime</span>
+              <span class="skill-chip">KV-Cache Optimization</span>
+            </div>
+          </div>
+
+          <!-- Tier 4 -->
+          <div class="stack-tier glass-card">
+            <div class="tier-header">
+              <div class="tier-icon">🔍</div>
+              <div>
+                <h3 class="tier-title">Retrieval &amp; Vector Databases</h3>
+                <div class="tier-subtitle">Hybrid Search &amp; Knowledge Graphs</div>
+              </div>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip">Qdrant</span>
+              <span class="skill-chip">Neo4j (GraphRAG)</span>
+              <span class="skill-chip">FAISS HNSW</span>
+              <span class="skill-chip">ColPali Multimodal</span>
+              <span class="skill-chip">Sparse BM25</span>
+              <span class="skill-chip">Cross-Encoders</span>
+              <span class="skill-chip">ChromaDB</span>
+              <span class="skill-chip">PostgreSQL (pgvector)</span>
+            </div>
+          </div>
+
+          <!-- Tier 5 -->
+          <div class="stack-tier glass-card">
+            <div class="tier-header">
+              <div class="tier-icon">☁️</div>
+              <div>
+                <h3 class="tier-title">Distributed MLOps &amp; Cloud</h3>
+                <div class="tier-subtitle">Infrastructure as Code &amp; Telemetry</div>
+              </div>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip">Kubeflow (KFP v2)</span>
+              <span class="skill-chip">Docker Multi-Stage</span>
+              <span class="skill-chip">Kubernetes (K8s)</span>
+              <span class="skill-chip">AWS EKS / SageMaker</span>
+              <span class="skill-chip">Terraform (IaC)</span>
+              <span class="skill-chip">MLflow</span>
+              <span class="skill-chip">Prometheus</span>
+              <span class="skill-chip">Grafana</span>
+              <span class="skill-chip">Loki / OpenTelemetry</span>
+              <span class="skill-chip">GitHub Actions CI/CD</span>
+            </div>
+          </div>
+
+          <!-- Tier 6 -->
+          <div class="stack-tier glass-card">
+            <div class="tier-header">
+              <div class="tier-icon">💻</div>
+              <div>
+                <h3 class="tier-title">Core Languages &amp; Frameworks</h3>
+                <div class="tier-subtitle">Algorithmic &amp; Backend Foundations</div>
+              </div>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip">Python 3.11+</span>
+              <span class="skill-chip">PyTorch 2.x</span>
+              <span class="skill-chip">C++ (Algorithms)</span>
+              <span class="skill-chip">SQL / Relational</span>
+              <span class="skill-chip">Hugging Face</span>
+              <span class="skill-chip">OpenCV</span>
+              <span class="skill-chip">Linux / Bash</span>
+              <span class="skill-chip">Git / Version Control</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 05: CREDENTIALS & ACHIEVEMENTS ==================== -->
+    <section class="section" id="credentials">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge">05 // VERIFIED PROOF</span>
+          <h2 class="section-title">Certifications &amp; Achievements</h2>
+          <p class="section-subtitle">
+            Industry cloud credentials, competitive programming honors, and academic degrees.
+          </p>
+        </div>
+
+        <div class="credentials-grid">
+
+          <!-- AWS 1 -->
+          <div class="cred-card glass-card">
+            <div class="cred-badge aws">AWS</div>
+            <div class="cred-info">
+              <h4 class="cred-name">AWS Solutions Architect &ndash; Associate</h4>
+              <div class="cred-issuer">Amazon Web Services &bull; Credly Verified</div>
+            </div>
+            <a href="https://www.credly.com/badges/991d0485-9af6-4d72-b12f-7ce99d38f272/public_url" target="_blank" rel="noopener" class="cred-verify-link">Verify &rarr;</a>
+          </div>
+
+          <!-- AWS 2 -->
+          <div class="cred-card glass-card">
+            <div class="cred-badge aws">AWS</div>
+            <div class="cred-info">
+              <h4 class="cred-name">AWS Machine Learning Engineer &ndash; Associate</h4>
+              <div class="cred-issuer">Amazon Web Services &bull; Credly Verified</div>
+            </div>
+            <a href="https://www.credly.com/badges/19e25546-2ade-4f45-bf50-3612dc9de2eb/public_url" target="_blank" rel="noopener" class="cred-verify-link">Verify &rarr;</a>
+          </div>
+
+          <!-- AWS 3 -->
+          <div class="cred-card glass-card">
+            <div class="cred-badge aws">AWS</div>
+            <div class="cred-info">
+              <h4 class="cred-name">AWS AI Practitioner</h4>
+              <div class="cred-issuer">Amazon Web Services &bull; Credly Verified</div>
+            </div>
+            <a href="https://www.credly.com/badges/b120869d-b214-4384-a9c6-8d1f77da7bc5" target="_blank" rel="noopener" class="cred-verify-link">Verify &rarr;</a>
+          </div>
+
+          <!-- AWS 4 -->
+          <div class="cred-card glass-card">
+            <div class="cred-badge aws">AWS</div>
+            <div class="cred-info">
+              <h4 class="cred-name">AWS Cloud Practitioner</h4>
+              <div class="cred-issuer">Amazon Web Services &bull; Credly Verified</div>
+            </div>
+            <a href="https://www.credly.com/badges/1b9b8b87-ce01-441c-8f84-ed055ee9f07d/public_url" target="_blank" rel="noopener" class="cred-verify-link">Verify &rarr;</a>
+          </div>
+
+          <!-- Microsoft Azure -->
+          <div class="cred-card glass-card">
+            <div class="cred-badge azure">AZURE</div>
+            <div class="cred-info">
+              <h4 class="cred-name">Azure AI Apps &amp; Agents Developer &ndash; Associate</h4>
+              <div class="cred-issuer">Microsoft Certified &bull; AI-103</div>
+            </div>
+            <a href="https://learn.microsoft.com/api/credentials/share/en-us/OmarAbdelhamid-8655/5628E1B02C79DA17?sharingId=C1C86A19180C72A2" target="_blank" rel="noopener" class="cred-verify-link">Verify &rarr;</a>
+          </div>
+
+          <!-- ICPC Honor -->
+          <div class="cred-card glass-card">
+            <div class="cred-badge icpc">ICPC</div>
+            <div class="cred-info">
+              <h4 class="cred-name">ICPC / ECPC Finalist</h4>
+              <div class="cred-issuer">Ranked 4th at Arab Open University &bull; ECPC 2024</div>
+            </div>
+            <span class="cred-status">Competitive Honor</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 06: CONTACT ==================== -->
+    <section class="section" id="contact">
+      <div class="container contact-container">
+        
+        <div class="contact-box glass-card featured-glow">
+          <span class="section-badge">06 // DIRECT CHANNELS</span>
+          <h2 class="contact-headline">Let's Build Frontier AI Together</h2>
+          <p class="contact-desc">
+            Open to senior engineering roles, research collaborations, high-impact consulting, and tech advisory worldwide.
+          </p>
+
+          <div class="contact-channels">
+            <div class="channel-card">
+              <div class="channel-icon">✉️</div>
+              <div class="channel-label">Direct Email</div>
+              <div class="channel-value">omarabdelhamid347@gmail.com</div>
+              <button class="btn-copy-channel" data-copy="omarabdelhamid347@gmail.com">Copy to Clipboard</button>
+            </div>
+
+            <div class="channel-card">
+              <div class="channel-icon">💼</div>
+              <div class="channel-label">LinkedIn Profile</div>
+              <div class="channel-value">omar-abdelhamid-ai</div>
+              <a href="https://www.linkedin.com/in/omar-abdelhamid-ai/" target="_blank" rel="noopener" class="btn-channel">Open Profile &rarr;</a>
+            </div>
+
+            <div class="channel-card">
+              <div class="channel-icon">🐙</div>
+              <div class="channel-label">GitHub Repositories</div>
+              <div class="channel-value">@OmarAbdelhamidAly</div>
+              <a href="https://github.com/OmarAbdelhamidAly" target="_blank" rel="noopener" class="btn-channel">View Codebases &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Floating CLI Terminal Modal -->
+  <div class="terminal-modal" id="terminalModal">
+    <div class="terminal-window">
+      <div class="terminal-header">
+        <div class="console-dots">
+          <span class="dot dot-red" id="closeTerminalBtn"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+        </div>
+        <div class="terminal-title">omar@antigravity-ai: ~ (zsh)</div>
+        <div class="terminal-hint">type 'help' for commands</div>
+      </div>
+      <div class="terminal-body" id="terminalOutput">
+        <div class="term-line welcome">Omar Abdelhamid Aly &mdash; Interactive AI Systems Shell v2.4.0</div>
+        <div class="term-line">Type <span class="term-hl">'help'</span> to see available commands or <span class="term-hl">'skills'</span>, <span class="term-hl">'research'</span>, <span class="term-hl">'contact'</span>.</div>
+      </div>
+      <div class="terminal-input-row">
+        <span class="term-prompt">omar@lab:~$</span>
+        <input type="text" id="terminalInput" class="term-input" autocomplete="off" spellcheck="false" autofocus>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast" id="toast">Notification</div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        &copy; 2026 Omar Abdelhamid Aly. Designed &amp; Engineered with Zero-Bloat Vanilla Architecture.
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/OmarAbdelhamidAly" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/omar-abdelhamid-ai/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:omarabdelhamid347@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
