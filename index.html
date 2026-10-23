@@ -35,11 +35,10 @@
       </a>
 
       <nav class="nav-menu">
-        <a href="#research" class="nav-item">Research</a>
+        <a href="#lab" class="nav-item">Live Lab</a>
         <a href="#systems" class="nav-item">Systems</a>
+        <a href="#research" class="nav-item">Research</a>
         <a href="#experience" class="nav-item">Experience</a>
-        <a href="#lab" class="nav-item">Architecture Lab</a>
-        <a href="#stack" class="nav-item">Stack</a>
         <a href="#credentials" class="nav-item">Credentials</a>
       </nav>
 
@@ -83,15 +82,12 @@
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
                 <span>Download Resume (PDF)</span>
               </a>
-              <a href="#systems" class="btn-secondary-action">
-                <span>Explore Systems Architecture</span>
+              <a href="#lab" class="btn-secondary-action">
+                <span>Test Live Architecture &darr;</span>
               </a>
-              <a href="#research" class="btn-secondary-action">
-                <span>Applied Research &amp; R&amp;D</span>
-              </a>
-              <button class="btn-clipboard-action" id="copyEmailQuickBtn" data-email="omarabdelhamid347@gmail.com">
-                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                <span>omarabdelhamid347@gmail.com</span>
+              <button class="btn-clipboard-action" id="copyEmailQuickBtn" data-email="omarabdelhamid347@gmail.com" title="Copy email address">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                <span>Copy Email</span>
               </button>
             </div>
           </div>
@@ -139,99 +135,82 @@
       </div>
     </section>
 
-    <!-- ==================== 01. RESEARCH & APPLIED R&D ==================== -->
-    <section class="content-section" id="research">
+    <!-- ==================== 01. LIVE ARCHITECTURE SIMULATION ==================== -->
+    <section class="content-section" id="lab">
       <div class="container">
         
         <div class="section-title-wrap">
-          <div class="section-label">Research &amp; Applied R&amp;D</div>
-          <h2 class="section-heading">Empirical Reasoning &amp; Knowledge Retrieval</h2>
+          <div class="section-label">01. Live Architecture Simulation</div>
+          <h2 class="section-heading">Interactive Agentic RAG Pipeline</h2>
           <p class="section-subheading">
-            Applied research at Orange Innovation Labs and graduate-level implementations bridging dense retrieval, small model reasoning, and knowledge graphs.
+            Experience the multi-stage state machine: from query anaphora resolution and hybrid vector-graph traversal to reflection and Prometheus telemetry.
           </p>
         </div>
 
-        <div class="research-grid">
-
-          <!-- Project 1: Orange Innovation Labs -->
-          <div class="research-entry">
-            <div class="entry-meta">
-              <span class="meta-tag applied-rd">Applied R&amp;D Initiative</span>
-              <span class="meta-journal">Orange Innovation Egypt</span>
-              <span class="meta-date">2026 &mdash; Present</span>
+        <div class="lab-shell">
+          
+          <div class="lab-control-bar">
+            <div class="lab-query-box">
+              <span class="query-tag">Query:</span>
+              <span class="query-text">"Compare its zero-shot transfer collapse on AST mutations vs standard GRPO"</span>
             </div>
-
-            <h3 class="entry-title">
-              Reduction Ladder: Diagnosing &amp; Resolving Code SLM Shortcut Mimicry
-            </h3>
-
-            <p class="entry-abstract">
-              Conducted under Dr. Ghada Soliman. Investigates template memorization versus genuine algorithmic reasoning in code Small Language Models. We established the 6-tier <em>Reduction Ladder</em> diagnostic evaluating collapse bounds across 664 coding tasks under semantics-preserving AST mutations, and formulated <strong>Inv-GRPO</strong> to enforce cross-perturbation invariance.
-            </p>
-
-            <div class="benchmark-pills">
-              <div class="pill-stat">
-                <span class="stat-name">Novel Algorithm</span>
-                <span class="stat-val">Invariance-Regularized Policy Optimization (Inv-GRPO)</span>
-              </div>
-              <div class="pill-stat">
-                <span class="stat-name">Resource Budget</span>
-                <span class="stat-val">&le;8GB Edge VRAM Bounds</span>
-              </div>
-              <div class="pill-stat">
-                <span class="stat-name">Latency Impact</span>
-                <span class="stat-val">0ms inference penalty</span>
-              </div>
-            </div>
-
-            <div class="entry-actions">
-              <a href="https://github.com/OmarAbdelhamidAly/diagnosing-resolving-code-slm-mimicry" target="_blank" rel="noopener" class="btn-action-primary">
-                <span>View Research Repository</span>
-                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-              </a>
+            <div class="lab-buttons">
+              <button class="btn-lab-step" id="prevLabStep" disabled>&larr; Back</button>
+              <button class="btn-lab-step primary" id="nextLabStep">Advance Stage &rarr;</button>
+              <button class="btn-lab-step" id="resetLab">&#x21bb; Reset</button>
             </div>
           </div>
 
-          <!-- Project 2: Benha University M.Sc. Research Implementation -->
-          <div class="research-entry">
-            <div class="entry-meta">
-              <span class="meta-tag msc-research">M.Sc. Research Implementation</span>
-              <span class="meta-journal">Faculty of Computers &amp; AI &bull; Benha University</span>
-              <span class="meta-date">Coursework R&amp;D</span>
+          <div class="lab-stages-track">
+            
+            <div class="stage-node active" id="stg-1">
+              <div class="stage-num">STAGE 01</div>
+              <div class="stage-name">Sliding Window &bull; Refiner</div>
+              <div class="stage-desc">Anaphora resolution ("its" &rarr; "Inv-GRPO model")</div>
+              <div class="stage-state">Running...</div>
             </div>
 
-            <h3 class="entry-title">
-              NT-sMoCo: Dense Retrieval &amp; Contrastive Learning for Incomplete Knowledge-Based QA
-            </h3>
+            <div class="stage-wire" id="wire-1"></div>
 
-            <p class="entry-abstract">
-              Graduate research project implementing and benchmarking the NT-sMoCo architecture for question answering over incomplete Knowledge Bases (simulating 30% to 100% Freebase coverage). Formulated a Normalized-Temperature Scaled Momentum Contrastive framework with a Dual-BERT dense retrieval backbone and a 2-layer Graph Attention Network (GATv2) for multi-hop subgraph entity traversal.
-            </p>
-
-            <div class="benchmark-pills">
-              <div class="pill-stat">
-                <span class="stat-name">Architecture</span>
-                <span class="stat-val">Dual-BERT + GATv2 PyTorch</span>
-              </div>
-              <div class="pill-stat">
-                <span class="stat-name">Evaluation</span>
-                <span class="stat-val">WebQSP Benchmark</span>
-              </div>
-              <div class="pill-stat">
-                <span class="stat-name">Graph Sparsity</span>
-                <span class="stat-val">30% &ndash; 100% Coverage Bounds</span>
-              </div>
+            <div class="stage-node" id="stg-2">
+              <div class="stage-num">STAGE 02</div>
+              <div class="stage-name">Hybrid Retrieval Backbone</div>
+              <div class="stage-desc">Qdrant dense vectors + Neo4j GraphRAG multi-hop</div>
+              <div class="stage-state">Idle</div>
             </div>
 
-            <div class="entry-actions">
-              <a href="https://github.com/OmarAbdelhamidAly/nt-smoco-kbqa" target="_blank" rel="noopener" class="btn-action-primary">
-                <span>View Implementation Code</span>
-                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-              </a>
-              <a href="https://doi.org/10.1016/j.eswa.2025.129025" target="_blank" rel="noopener" class="btn-action-secondary">
-                <span>View Paper Reference</span>
-              </a>
+            <div class="stage-wire" id="wire-2"></div>
+
+            <div class="stage-node" id="stg-3">
+              <div class="stage-num">STAGE 03</div>
+              <div class="stage-name">Multi-Agent Reflection</div>
+              <div class="stage-desc">Hallucination detection &amp; fact attribution loop</div>
+              <div class="stage-state">Idle</div>
             </div>
+
+            <div class="stage-wire" id="wire-3"></div>
+
+            <div class="stage-node" id="stg-4">
+              <div class="stage-num">STAGE 04</div>
+              <div class="stage-name">Galileo Quality &bull; Telemetry</div>
+              <div class="stage-desc">Context Relevance, Chunk Utilization &amp; Prometheus</div>
+              <div class="stage-state">Idle</div>
+            </div>
+
+          </div>
+
+          <div class="lab-terminal-output">
+            <div class="term-bar">
+              <div class="term-dots"><span></span><span></span><span></span></div>
+              <div class="term-tag">OpenTelemetry Trace Console</div>
+              <div class="term-timer" id="labTimer">p95 Latency: 14.2ms</div>
+            </div>
+            <pre class="term-code" id="labConsole"><code>[SPAN: query_refiner] status=OK duration=14.2ms
+- Input Query: "Compare its zero-shot transfer collapse on AST mutations vs standard GRPO"
+- Sliding Window: 4 turns [2 User + 2 Assistant cached]
+- Anaphora Resolution: "its" resolved -> "Inv-GRPO (Invariance-Regularized Policy Optimization)"
+- Refined Output: "Compare Inv-GRPO zero-shot transfer collapse on semantics-preserving AST mutations vs standard GRPO"
+- Semantic Drift Metric: 0.02 (Optimal boundary)</code></pre>
           </div>
 
         </div>
@@ -239,12 +218,12 @@
       </div>
     </section>
 
-    <!-- ==================== 02. SYSTEMS ==================== -->
+    <!-- ==================== 02. SYSTEMS ARCHITECTURE ==================== -->
     <section class="content-section" id="systems">
       <div class="container">
         
         <div class="section-title-wrap">
-          <div class="section-label">Architecture Portfolio</div>
+          <div class="section-label">02. Systems Architecture</div>
           <h2 class="section-heading">Production Systems &amp; Distributed Platforms</h2>
           <p class="section-subheading">
             Curated engineering repositories spanning autonomous agent workflows, high-throughput model serving, and enterprise RAG backends.
@@ -274,9 +253,11 @@
               <span class="metric-flag">AWS EKS &bull; Celery</span>
             </div>
             <h3 class="card-heading">OpenQ &mdash; Federated Agentic Intelligence Platform</h3>
-            <p class="card-summary">
-              Autonomous AI platform unifying heterogeneous data modalities behind a natural language interface. Architected a hybrid retrieval backend (Neo4j structural traversal + Qdrant semantic search) orchestrated across 8 fault-isolated Celery workers with 3-retry self-healing SQL generation and persistent Human-in-the-Loop checkpoints (AsyncRedisSaver).
-            </p>
+            <div class="card-points">
+              <div class="card-point"><strong>Multi-Agent State Machine:</strong> LangGraph orchestration with self-healing SQL auto-correction loop and human-in-the-loop checkpoints.</div>
+              <div class="card-point"><strong>Hybrid GraphRAG Backend:</strong> Neo4j structural traversal + Qdrant dense vector search partitioned across 8 Celery workers.</div>
+              <div class="card-point"><strong>Enterprise Cloud Infrastructure:</strong> AWS EKS cluster with Aurora Serverless v2 and Prometheus observability.</div>
+            </div>
             <div class="card-specs">
               <span class="spec-tag">LangGraph</span>
               <span class="spec-tag">FastAPI</span>
@@ -299,9 +280,11 @@
               <span class="metric-flag">Triton + vLLM &bull; K8s</span>
             </div>
             <h3 class="card-heading">Arabic Mental Health LLM &mdash; Distributed Alignment &amp; Serving</h3>
-            <p class="card-summary">
-              Automated Kubeflow (KFP v2) DAG fine-tuning Qwen2.5-3B via Unsloth (NF4 4-bit). Benchmarked 6 parallel alignment algorithms (DPO, IPO, KTO, ORPO, SimPO, RLOO), auto-merging the winning SimPO model in BFloat16. Configured high-throughput serving with NVIDIA Triton + vLLM (PagedAttention, Continuous Batching) exposed via FastAPI and gRPC.
-            </p>
+            <div class="card-points">
+              <div class="card-point"><strong>Distributed Alignment:</strong> Kubeflow (KFP v2) DAG benchmarked 6 alignment algorithms (DPO, IPO, SimPO, RLOO) on Qwen2.5-3B via Unsloth NF4.</div>
+              <div class="card-point"><strong>High-Throughput Serving:</strong> NVIDIA Triton Inference Server + vLLM with PagedAttention and Continuous Batching.</div>
+              <div class="card-point"><strong>Dual-Protocol Proxy:</strong> High-concurrency FastAPI and gRPC proxy layer ensuring sub-40ms p95 API response times.</div>
+            </div>
             <div class="card-specs">
               <span class="spec-tag">vLLM</span>
               <span class="spec-tag">NVIDIA Triton</span>
@@ -324,9 +307,11 @@
               <span class="metric-flag">Zero-Hallucination Loop</span>
             </div>
             <h3 class="card-heading">Multilingual RAG Architecture with Multi-Agent Reflection</h3>
-            <p class="card-summary">
-              Designed a 5-agent LangGraph topology (Query Rewriter, ReAct Brain, Reflection Node) utilizing LLaMA-3.3-70B to iteratively detect and mitigate LLM hallucinations. Optimized retrieval latency using a 5-stage FAISS HNSW pipeline combining BM25 hybrid search, cross-encoder reranking, and Redis semantic caching.
-            </p>
+            <div class="card-points">
+              <div class="card-point"><strong>5-Agent Topology:</strong> LangGraph state machine (Query Rewriter, ReAct Brain, Reflection Node) with iterative hallucination checks.</div>
+              <div class="card-point"><strong>5-Stage Dense Retrieval:</strong> FAISS HNSW index combining BM25 hybrid search, cross-encoder reranking, and Redis semantic caching.</div>
+              <div class="card-point"><strong>Factual Verification:</strong> Grounded attribution assertions achieving verified factual fidelity across multilingual queries.</div>
+            </div>
             <div class="card-specs">
               <span class="spec-tag">LangGraph</span>
               <span class="spec-tag">FAISS HNSW</span>
@@ -350,7 +335,7 @@
             </div>
             <h3 class="card-heading">Insightify &mdash; Agentic Business Intelligence Platform</h3>
             <p class="card-summary">
-              Autonomous business intelligence platform where agents autonomously decompose natural language questions into multi-step SQL plans, execute across relational databases, evaluate query correctness, and surface actionable insights with automated visualization without human prompting.
+              Autonomous business intelligence platform where agents decompose natural language queries into multi-step SQL plans, execute across relational databases, evaluate query correctness, and surface actionable insights with automated visualization.
             </p>
             <div class="card-specs">
               <span class="spec-tag">LangChain</span>
@@ -375,7 +360,7 @@
             </div>
             <h3 class="card-heading">LoRA-Finetuned E-Commerce Semantic Search</h3>
             <p class="card-summary">
-              Fine-tuned dual-encoder bi-encoder embeddings via LoRA (~90% parameter reduction) with FAISS vector indexing over 1M+ product SKUs. Engineered a stateful LangGraph conversational workflow orchestrating FLAN-T5 for context-aware recommendations and personalized multi-turn search sessions.
+              Fine-tuned dual-encoder bi-encoder embeddings via LoRA (~90% parameter reduction) with FAISS vector indexing over 1M+ product SKUs. Engineered a stateful LangGraph conversational workflow orchestrating FLAN-T5 for context-aware recommendations.
             </p>
             <div class="card-specs">
               <span class="spec-tag">LoRA / PEFT</span>
@@ -493,12 +478,112 @@
       </div>
     </section>
 
-    <!-- ==================== 03. CAREER TIMELINE ==================== -->
+    <!-- ==================== 03. APPLIED RESEARCH & R&D ==================== -->
+    <section class="content-section" id="research">
+      <div class="container">
+        
+        <div class="section-title-wrap">
+          <div class="section-label">03. Applied Research &amp; R&amp;D</div>
+          <h2 class="section-heading">Empirical Reasoning &amp; Knowledge Retrieval</h2>
+          <p class="section-subheading">
+            Applied research at Orange Innovation Labs and graduate-level implementations bridging dense retrieval, small model reasoning, and knowledge graphs.
+          </p>
+        </div>
+
+        <div class="research-grid">
+
+          <!-- Project 1: Orange Innovation Labs -->
+          <div class="research-entry">
+            <div class="entry-meta">
+              <span class="meta-tag applied-rd">Applied R&amp;D Initiative</span>
+              <span class="meta-journal">Orange Innovation Egypt</span>
+              <span class="meta-date">2026 &mdash; Present</span>
+            </div>
+
+            <h3 class="entry-title">
+              Reduction Ladder: Diagnosing &amp; Resolving Code SLM Shortcut Mimicry
+            </h3>
+
+            <p class="entry-abstract">
+              Conducted under Dr. Ghada Soliman. Investigates template memorization versus genuine algorithmic reasoning in code Small Language Models. We established the 6-tier <em>Reduction Ladder</em> diagnostic evaluating collapse bounds across 664 coding tasks under semantics-preserving AST mutations, and formulated <strong>Inv-GRPO</strong> to enforce cross-perturbation invariance.
+            </p>
+
+            <div class="benchmark-pills">
+              <div class="pill-stat">
+                <span class="stat-name">Novel Algorithm</span>
+                <span class="stat-val">Invariance-Regularized Policy Optimization (Inv-GRPO)</span>
+              </div>
+              <div class="pill-stat">
+                <span class="stat-name">Resource Budget</span>
+                <span class="stat-val">&le;8GB Edge VRAM Bounds</span>
+              </div>
+              <div class="pill-stat">
+                <span class="stat-name">Latency Impact</span>
+                <span class="stat-val">0ms inference penalty</span>
+              </div>
+            </div>
+
+            <div class="entry-actions">
+              <a href="https://github.com/OmarAbdelhamidAly/diagnosing-resolving-code-slm-mimicry" target="_blank" rel="noopener" class="btn-action-primary">
+                <span>View Research Repository</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2: Benha University M.Sc. Research Implementation -->
+          <div class="research-entry">
+            <div class="entry-meta">
+              <span class="meta-tag msc-research">M.Sc. Research Implementation</span>
+              <span class="meta-journal">Faculty of Computers &amp; AI &bull; Benha University</span>
+              <span class="meta-date">Coursework R&amp;D</span>
+            </div>
+
+            <h3 class="entry-title">
+              NT-sMoCo: Dense Retrieval &amp; Contrastive Learning for Incomplete Knowledge-Based QA
+            </h3>
+
+            <p class="entry-abstract">
+              Graduate research project implementing and benchmarking the NT-sMoCo architecture for question answering over incomplete Knowledge Bases (simulating 30% to 100% Freebase coverage). Formulated a Normalized-Temperature Scaled Momentum Contrastive framework with a Dual-BERT dense retrieval backbone and a 2-layer Graph Attention Network (GATv2) for multi-hop subgraph entity traversal.
+            </p>
+
+            <div class="benchmark-pills">
+              <div class="pill-stat">
+                <span class="stat-name">Architecture</span>
+                <span class="stat-val">Dual-BERT + GATv2 PyTorch</span>
+              </div>
+              <div class="pill-stat">
+                <span class="stat-name">Evaluation</span>
+                <span class="stat-val">WebQSP Benchmark</span>
+              </div>
+              <div class="pill-stat">
+                <span class="stat-name">Graph Sparsity</span>
+                <span class="stat-val">30% &ndash; 100% Coverage Bounds</span>
+              </div>
+            </div>
+
+            <div class="entry-actions">
+              <a href="https://github.com/OmarAbdelhamidAly/nt-smoco-kbqa" target="_blank" rel="noopener" class="btn-action-primary">
+                <span>View Implementation Code</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+              <a href="https://doi.org/10.1016/j.eswa.2025.129025" target="_blank" rel="noopener" class="btn-action-secondary">
+                <span>View Paper Reference</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 04. TRAJECTORY & FELLOWSHIPS ==================== -->
     <section class="content-section" id="experience">
       <div class="container">
         
         <div class="section-title-wrap">
-          <div class="section-label">Trajectory &amp; Fellowships</div>
+          <div class="section-label">04. Trajectory &amp; Fellowships</div>
           <h2 class="section-heading">Professional Career &amp; Research Fellowships</h2>
           <p class="section-subheading">
             A progression through competitive national tech initiatives, selective R&amp;D labs, and enterprise infrastructure tracks.
@@ -513,7 +598,7 @@
             <div class="timeline-date">Jul 2026 &mdash; Present</div>
             <div class="timeline-body">
               <div class="timeline-title-row">
-                <h3 class="timeline-role">AI R&amp;D Intern</h3>
+                <h3 class="timeline-role">AI R&amp;D Engineer (Applied Research Track)</h3>
                 <span class="timeline-company">Orange Innovation Egypt</span>
               </div>
               <p class="timeline-desc">
@@ -528,7 +613,7 @@
             <div class="timeline-date">Jan 2026 &mdash; Apr 2026</div>
             <div class="timeline-body">
               <div class="timeline-title-row">
-                <h3 class="timeline-role">Agentic AI Engineer Trainee</h3>
+                <h3 class="timeline-role">Agentic AI Systems Engineer (Applied Fellowship)</h3>
                 <span class="timeline-company">National Telecommunication Institute (NTI)</span>
               </div>
               <p class="timeline-desc">
@@ -543,7 +628,7 @@
             <div class="timeline-date">Nov 2024 &mdash; Jan 2025</div>
             <div class="timeline-body">
               <div class="timeline-title-row">
-                <h3 class="timeline-role">AI Engineer Intern (Advanced Track)</h3>
+                <h3 class="timeline-role">AI Engineer (Advanced Track)</h3>
                 <span class="timeline-company">Orange Digital Center Egypt &bull; Level 3</span>
               </div>
               <p class="timeline-desc">
@@ -558,7 +643,7 @@
             <div class="timeline-date">Jun 2024 &mdash; Oct 2024</div>
             <div class="timeline-body">
               <div class="timeline-title-row">
-                <h3 class="timeline-role">AWS Machine Learning Fellow</h3>
+                <h3 class="timeline-role">AWS Machine Learning Fellow (MCIT Scholarship)</h3>
                 <span class="timeline-company">Digital Egypt Builders Initiative (DEBI &bull; MCIT)</span>
               </div>
               <p class="timeline-desc">
@@ -587,95 +672,12 @@
       </div>
     </section>
 
-    <!-- ==================== 04. LAB SIMULATION ==================== -->
-    <section class="content-section" id="lab">
-      <div class="container">
-        
-        <div class="section-title-wrap">
-          <div class="section-label">Live Architecture Simulation</div>
-          <h2 class="section-heading">Interactive Agentic RAG Pipeline</h2>
-          <p class="section-subheading">
-            Experience the multi-stage state machine: from query anaphora resolution and hybrid vector-graph traversal to reflection and Prometheus telemetry.
-          </p>
-        </div>
-
-        <div class="lab-shell">
-          
-          <div class="lab-control-bar">
-            <div class="lab-query-box">
-              <span class="query-tag">Query:</span>
-              <span class="query-text">"Compare its zero-shot transfer collapse on AST mutations vs standard GRPO"</span>
-            </div>
-            <div class="lab-buttons">
-              <button class="btn-lab-step" id="prevLabStep" disabled>&larr; Back</button>
-              <button class="btn-lab-step primary" id="nextLabStep">Advance Stage &rarr;</button>
-              <button class="btn-lab-step" id="resetLab">&#x21bb; Reset</button>
-            </div>
-          </div>
-
-          <div class="lab-stages-track">
-            
-            <div class="stage-node active" id="stg-1">
-              <div class="stage-num">STAGE 01</div>
-              <div class="stage-name">Sliding Window &bull; Refiner</div>
-              <div class="stage-desc">Anaphora resolution ("its" &rarr; "Inv-GRPO model")</div>
-              <div class="stage-state">Running...</div>
-            </div>
-
-            <div class="stage-wire" id="wire-1"></div>
-
-            <div class="stage-node" id="stg-2">
-              <div class="stage-num">STAGE 02</div>
-              <div class="stage-name">Hybrid Retrieval Backbone</div>
-              <div class="stage-desc">Qdrant dense vectors + Neo4j GraphRAG multi-hop</div>
-              <div class="stage-state">Idle</div>
-            </div>
-
-            <div class="stage-wire" id="wire-2"></div>
-
-            <div class="stage-node" id="stg-3">
-              <div class="stage-num">STAGE 03</div>
-              <div class="stage-name">Multi-Agent Reflection</div>
-              <div class="stage-desc">Hallucination detection &amp; fact attribution loop</div>
-              <div class="stage-state">Idle</div>
-            </div>
-
-            <div class="stage-wire" id="wire-3"></div>
-
-            <div class="stage-node" id="stg-4">
-              <div class="stage-num">STAGE 04</div>
-              <div class="stage-name">Galileo Quality &bull; Telemetry</div>
-              <div class="stage-desc">Context Relevance, Chunk Utilization &amp; Prometheus</div>
-              <div class="stage-state">Idle</div>
-            </div>
-
-          </div>
-
-          <div class="lab-terminal-output">
-            <div class="term-bar">
-              <div class="term-dots"><span></span><span></span><span></span></div>
-              <div class="term-tag">OpenTelemetry Trace Console</div>
-              <div class="term-timer" id="labTimer">p95 Latency: 14.2ms</div>
-            </div>
-            <pre class="term-code" id="labConsole"><code>[SPAN: query_refiner] status=OK duration=14.2ms
-- Input Query: "Compare its zero-shot transfer collapse on AST mutations vs standard GRPO"
-- Sliding Window: 4 turns [2 User + 2 Assistant cached]
-- Anaphora Resolution: "its" resolved -> "Inv-GRPO (Invariance-Regularized Policy Optimization)"
-- Refined Output: "Compare Inv-GRPO zero-shot transfer collapse on semantics-preserving AST mutations vs standard GRPO"
-- Semantic Drift Metric: 0.02 (Optimal boundary)</code></pre>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
     <!-- ==================== 05. TECH STACK ==================== -->
     <section class="content-section" id="stack">
       <div class="container">
         
         <div class="section-title-wrap">
-          <div class="section-label">Architectural Taxonomy</div>
+          <div class="section-label">05. Architectural Taxonomy</div>
           <h2 class="section-heading">Technical Stack &amp; Core Systems</h2>
           <p class="section-subheading">
             Classified by architectural layer and production responsibility.
@@ -780,12 +782,12 @@
       </div>
     </section>
 
-    <!-- ==================== 06. CREDENTIALS ==================== -->
+    <!-- ==================== 06. VERIFIED CREDENTIALS ==================== -->
     <section class="content-section" id="credentials">
       <div class="container">
         
         <div class="section-title-wrap">
-          <div class="section-label">Verified Industry Proof</div>
+          <div class="section-label">06. Verified Industry Proof</div>
           <h2 class="section-heading">Certifications &amp; Honors</h2>
           <p class="section-subheading">
             Official cloud architecture credentials and competitive programming recognition.
@@ -865,12 +867,12 @@
       </div>
     </section>
 
-    <!-- ==================== 07. CONTACT ==================== -->
+    <!-- ==================== 07. DIRECT COMMUNICATION ==================== -->
     <section class="content-section" id="contact">
       <div class="container contact-wrapper">
         
         <div class="contact-card">
-          <div class="section-label">Direct Communication</div>
+          <div class="section-label">07. Direct Communication</div>
           <h2 class="contact-title">Let's Build Reliable AI Systems.</h2>
           <p class="contact-subtitle">
             Available for technical lead roles, applied research positions, and high-impact AI systems architecture advisory.
@@ -915,20 +917,20 @@
       
       <div class="palette-results" id="paletteResults">
         <div class="palette-group-title">NAVIGATION</div>
-        <div class="palette-item" data-action="nav" data-target="#research">
-          <span class="item-name">Applied Research &amp; M.Sc. Implementation</span>
+        <div class="palette-item" data-action="nav" data-target="#lab">
+          <span class="item-name">Interactive Agentic RAG Simulation</span>
           <span class="item-shortcut">Jump</span>
         </div>
         <div class="palette-item" data-action="nav" data-target="#systems">
           <span class="item-name">Production Systems &amp; Repositories</span>
           <span class="item-shortcut">Jump</span>
         </div>
-        <div class="palette-item" data-action="nav" data-target="#experience">
-          <span class="item-name">Career Timeline &amp; Fellowships</span>
+        <div class="palette-item" data-action="nav" data-target="#research">
+          <span class="item-name">Applied Research &amp; M.Sc. Implementation</span>
           <span class="item-shortcut">Jump</span>
         </div>
-        <div class="palette-item" data-action="nav" data-target="#lab">
-          <span class="item-name">Interactive Agentic RAG Simulation</span>
+        <div class="palette-item" data-action="nav" data-target="#experience">
+          <span class="item-name">Career Trajectory &amp; Fellowships</span>
           <span class="item-shortcut">Jump</span>
         </div>
         <div class="palette-item" data-action="nav" data-target="#stack">
