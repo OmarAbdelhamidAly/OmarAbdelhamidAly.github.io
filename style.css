@@ -286,6 +286,29 @@ body {
   color: var(--text-primary);
 }
 
+.btn-resume-download {
+  background: rgba(56, 189, 248, 0.08);
+  color: var(--accent-cyan);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  font-size: 0.84rem;
+  font-weight: 600;
+  padding: 0.45rem 0.95rem;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all var(--transition-fast);
+}
+
+.btn-resume-download:hover {
+  background: var(--accent-cyan);
+  color: #041017;
+  border-color: var(--accent-cyan);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(56, 189, 248, 0.3);
+}
+
 .btn-direct-contact {
   background: var(--text-primary);
   color: var(--bg-page);

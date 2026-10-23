@@ -252,6 +252,17 @@ document.addEventListener('DOMContentLoaded', () => {
       navigator.clipboard.writeText(val).then(() => {
         showToast('Email copied to clipboard');
       });
+    } else if (action === 'download') {
+      const url = item.getAttribute('data-url');
+      if (url) {
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'Omar_Abdelhamid_AI_Resume.pdf';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        showToast('Downloading Resume PDF...');
+      }
     } else if (action === 'external') {
       const url = item.getAttribute('data-url');
       if (url) window.open(url, '_blank', 'noopener,noreferrer');
